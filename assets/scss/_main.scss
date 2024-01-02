@@ -53,9 +53,9 @@ h6 {
     .title {
       font-size: 250px;
       line-height: 1;
-      text-align: center;
       @include large-desktop {
         font-size: 150px;
+        text-align: center;
       }
       @include tablet {
         font-size: 120px;

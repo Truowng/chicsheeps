@@ -56,11 +56,11 @@ h6 {
 #banner .heading-block .title {
   font-size: 250px;
   line-height: 1;
-  text-align: center;
 }
 @media only screen and (max-width: 1399px) {
   #banner .heading-block .title {
     font-size: 150px;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 991px) {
