@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: $font-poppins;
+  background-color: $black;
+}
+
+img,
+video {
+  width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.heading-block {
+  .title {
+    font-family: $font-feogra;
+    color: $white;
+    margin-bottom: 20px;
+  }
+  .desc {
+    color: $white;
+    font-weight: 200;
+    letter-spacing: 0.015em;
+    line-height: 25px;
+  }
+}
+
+#banner {
+  margin-top: 50px;
+  .heading-block {
+    position: relative;
+    .title {
+      font-size: 250px;
+      line-height: 1;
+      span {
+        color: $pri;
+        font-size: 320px;
+      }
+    }
+    .desc {
+      position: absolute;
+      right: 0;
+      bottom: 345px;
+      max-width: 400px;
+    }
+  }
+  .image {
+    margin-top: 50px;
+    overflow: hidden;
+    border-radius: 30px;
+  }
+}
+
+#about {
+  margin-top: 200px;
+  .about-wrapper {
+    @include flex(space-between, start, 35px);
+  }
+  .image {
+    width: 60%;
+    overflow: hidden;
+    border-radius: 30px;
+  }
+  .content {
+    width: 40%;
+    .heading-block {
+      .title {
+        font-size: 80px;
+        line-height: 1;
+      }
+      .desc {
+        max-width: 80%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+#social {
+  margin-top: 200px;
+  .heading-block {
+    .title {
+      text-align: center;
+      font-size: 100px;
+      span {
+        color: $pri;
+      }
+    }
+    .desc {
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+  .button-wrapper {
+    @include flex(center, center, 20px);
+    margin-top: 50px;
+  }
+  .button {
+    border-radius: 500px;
+    border: 2px solid $white;
+    min-width: 200px;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-family: $font-feogra;
+    text-align: center;
+    color: $white;
+    transition: all ease 0.5s;
+    &:hover {
+      border-color: $pri;
+      background-color: $pri;
+      color: $black;
+    }
+  }
+}
